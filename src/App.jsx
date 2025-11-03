@@ -7,7 +7,14 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <h1>⚡ Vite CI/CD Demo</h1>
+        <h1>⚡ Vite CI/CD Demo ⚡ 
+          <div className="emoji">🚀</div>
+          <div className="emoji">🚀</div>
+          <div className="emoji">🚀</div>
+          <div className="emoji">🚀</div>
+          <div className="emoji">🚀</div>
+
+        </h1>
         
         <div className="info-card">
           <h2>Environment Information</h2>
