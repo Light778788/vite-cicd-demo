@@ -34,8 +34,6 @@ jobs:
       - name: Install dependencies
         run: npm ci
       
-   
-      
       - name: Run tests
         run: npm test
       
@@ -69,7 +67,7 @@ jobs:
         env:
           VITE_BUILD_NUMBER: ${{ github.run_number }}
           VITE_COMMIT_SHA: ${{ github.sha }}
-          VITE_BASE_PATH: /vite-cicd-demo
+          VITE_BASE_PATH: /vite-cicd-demo/  # <- trailing slash added here
         run: npm run build
       
       - name: Upload build artifact
@@ -107,7 +105,7 @@ jobs:
           VITE_API_URL: https://api-staging.example.com
           VITE_BUILD_NUMBER: ${{ github.run_number }}
           VITE_COMMIT_SHA: ${{ github.sha }}
-          VITE_BASE_PATH: /vite-cicd-demo
+          VITE_BASE_PATH: /vite-cicd-demo/  # <- trailing slash added here
         run: npm run build
       
       - name: Add staging indicator
@@ -150,7 +148,7 @@ jobs:
           VITE_API_URL: https://api.example.com
           VITE_BUILD_NUMBER: ${{ github.run_number }}
           VITE_COMMIT_SHA: ${{ github.sha }}
-          VITE_BASE_PATH: /vite-cicd-demo
+          VITE_BASE_PATH: /vite-cicd-demo/  # <- trailing slash added here
         run: npm run build
       
       - name: Deploy to GitHub Pages
