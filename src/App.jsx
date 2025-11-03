@@ -7,10 +7,17 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <h1>⚡ Vite CI/CD Demo ⚡ 
+
+        <h1>⚡ Vite CI/CD Demo </h1>
+        
+        <p className="deployment-info">
+          <span className="success-message">
+            Deployed successfully via GitHub Actions!
+          </span>
+        </p>
+
      
 
-        </h1>
         
         <div className="info-card">
           <h2>Environment Information</h2>
