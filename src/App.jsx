@@ -7,6 +7,7 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
+
         <h1>⚡ Vite CI/CD Demo </h1>
         
         <p className="deployment-info">
@@ -14,6 +15,9 @@ function App() {
             Deployed successfully via GitHub Actions!
           </span>
         </p>
+
+     
+
         
         <div className="info-card">
           <h2>Environment Information</h2>
